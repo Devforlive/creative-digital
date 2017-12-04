@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700");
+@import url('https://fonts.googleapis.com/css?family=Special+Elite');
+body {
+  overflow-x: hidden; }
+
+@font-face {
+  font-family: sans-serif;
+  src: url(../Special_Elite/SpecialElite-Regular.ttf); }
+@font-face {
+  font-family: sans-serif;
+  src: url(../Special_Elite/SpecialElite-Regular.ttf); }
+main {
+  background: #ebebeb; }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+h2 {
+  font-family: 'Special Elite', serif;
+  font-size: 36px;
+  font-weight: 600;
+  text-transform: uppercase; }
+
+.general-header {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  padding: 0 10%; }
+
+svg {
+  cursor: pointer; }
+
+.svg-link {
+  fill: #ba1b4b;
+  fill-rule: evenodd;
+  padding: 10px;
+  display: inline-block;
+  width: 10%;
+  vertical-align: -webkit-baseline-middle;
+  vertical-align: middle;
+  animation: rotateY 3s infinite linear; }
+
+.header-list {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 89%;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+  .header-list__list {
+    padding: 0 8px; }
+  .header-list__link {
+    padding: 10px 0;
+    position: relative;
+    color: #ffffff;
+    font-family: 'Special Elite', cursive;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    -webkit-transition: 1s;
+    transition: 1s; }
+    .header-list__link::before {
+      display: block;
+      position: absolute;
+      content: "";
+      height: 4px;
+      width: 0;
+      background-color: #ba1b4b;
+      -webkit-transition: width .5s ease-in-out, left .5s ease-in-out;
+      transition: width .5s ease-in-out, left .5s ease-in-out;
+      left: 50%;
+      bottom: 0; }
+    .header-list__link::after {
+      display: block;
+      position: absolute;
+      content: "";
+      height: 4px;
+      width: 0;
+      background-color: #ba1b4b;
+      -webkit-transition: width .5s ease-in-out;
+      transition: width .5s ease-in-out;
+      left: 50%;
+      bottom: 0; }
+    .header-list__link:hover::before {
+      width: 50%;
+      left: 0; }
+    .header-list__link:hover::after {
+      width: 50%; }
+
+.active-header {
+  background: rgba(159, 154, 207, 0.54); }
+
+#first {
+  fill: rgba(255, 255, 153, 0.73);
+  }
+
+#second {
+  fill: rgba(240, 154, 107, 0.73);
+   }
+
+#third {
+  fill: rgba(213, 94, 140, 0.73);
+  }
+
+@media screen and (max-width: 742px) {
+  .header-list {
+    display: none; } }
+.landing {
+  background: url("../img/1_background.png");
+  background-size: 100%;
+  padding: 20% 0;
+  text-align: center; }
+  .landing h1 {
+    color: #fefefb;
+    font-family: 'Special Elite', sans-serif;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 75px;
+    text-transform: uppercase; }
+  .landing__text {
+    width: 60%;
+    margin: 0 auto;
+    color: #fefdfd;
+    font-family: 'Special Elite';
+    font-size: 30px;
+    }
+
+@media screen and (max-width: 700px) {
+  .landing h1 {
+    font-size: 35px; } }
+.about-us {
+  padding: 3% 0; }
+
+.column-left {
+  position: relative;
+  max-width: 380px;
+  max-height: 555px; }
+  .column-left__photo {
+    width: 100%;
+    height: auto; }
+
+.inner {
+  text-align: center;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 40px; }
+  .inner h2 {
+    color: #fefbfc;
+    line-height: 47px; }
+
+.column-right__text {
+  color: #665f60;
+  font-family: 'Special Elite', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 80px 0; }
+.column-right__learn {
+  display: block;
+  width: 30%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 15px 30px;
+  color: #7d7a7c;
+  font-family: 'Special Elite', sans-serif;
+  font-size: 20px;
+  // font-style: italic;
+  border: 1px solid #b4b2b3;
+  -webkit-transition: 1s;
+  transition: 1s; }
+  .column-right__learn:hover {
+    padding: 13px 28px;
+    border: 3px solid #b4b2b3;
+    -webkit-transition: 1s;
+    transition: 1s; }
+
+@media screen and (max-width: 615px) {
+  .column-right__learn {
+    width: 60%; } }

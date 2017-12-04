@@ -1,0 +1,46 @@
+.hot-dog {
+  background: url("../img/works-bgbg-hotdog.png");
+  background-size: cover;
+  padding: 2% 0;
+  text-align: center;
+  &__heading {
+    color: #fefcfd;
+    font-weight: 600;
+  }
+  &__link {
+    display: block;
+    width: 30%;
+    margin: 70px auto 20px;
+    text-align: center;
+    padding: 15px 30px;
+    color: #ffffff;;
+    font-family: "PT Sans",sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    border: 1px solid #ffffff;
+    transition: 1s;
+    &:hover {
+      border: 3px solid #ffffff;
+      padding: 13px 28px;
+      transition: 1s;
+    }
+  }
+}
+
+.hd-slider {
+  margin: 0 auto;
+  max-width: 730px;
+  &__slide {
+  margin-bottom: 15px;
+  }
+  &__photo {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 609px) {
+  .hot-dog__link {
+    width: 60%;
+  }
+}

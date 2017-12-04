@@ -1,0 +1,75 @@
+.our-team {
+  text-align: center;
+  padding: 2% 0;
+  &__heading {
+    color: #665f60;
+    font-weight: 500;
+  }
+}
+
+.team-slider {
+  &__heading {
+    color: #9f9acf;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  &__text {
+    color: #665f60;
+    font-family: "PT Sans",sans-serif;
+    font-size: 24px;
+    font-style: italic;
+  }
+  &__slide {
+    margin: 0 10px;
+    background: linear-gradient(to bottom, #ebebeb 0%, #ebebeb 31%, #ffffff 31%, #ffffff 100%);
+  }
+}
+
+.team-slider__slide > img {
+  margin: 0 auto;
+}
+
+.sotial {
+  background: #9f9acf;
+  padding: 15px 10px;
+  &__list {
+    display: inline-block;
+  }
+  &__link {
+    display: block;
+    background: #ebebeb;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    text-align: center;
+    color: #9f9acf;
+    font-size: 18px;
+    margin: 0 2px;
+    transition: 2s;
+    & i {
+      vertical-align: middle;
+    }
+    &--linked > .fa {
+      padding-top: 4px;
+    }
+    &--behance > .fa {
+      padding-top: 4px;
+    }
+    &--google > .fa {
+      padding-top: 5px;
+    }
+    &--facebook > .fa {
+      padding-right: 2px;
+      padding-top: 5px;
+    }
+    &--twitter > .fa {
+      padding-right: 1px;
+      padding-top: 5px;
+    }
+    &:hover {
+      transform: rotate(360deg) scale(1.30);
+      transition: transform 600ms;
+    }
+  }
+}
