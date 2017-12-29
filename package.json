@@ -1,5 +1,5 @@
 {
-  "name": "myprog",
+  "name": "creative-digital",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sasharr/creative-digital.git"
+    "url": ""
   },
   "author": "sasha",
   "license": "ISC",
